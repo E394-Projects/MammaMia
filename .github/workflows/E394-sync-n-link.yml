@@ -65,6 +65,8 @@ jobs:
           # File da proteggere in caso di fallimento rebase
           PROTECTED_FILES=(
             ".github/workflows/E394-sync-n-link.yml"
+            ".github/workflows/update_domains.yml"
+            "update_domains.py"
             # Aggiungi altri file che vuoi proteggere
           )
           
@@ -124,6 +126,9 @@ jobs:
           # File da controllare
           FILES_TO_CHECK=(
             "Dockerfile"
+            "Dockerfiles/Dockerfile-auto-update"
+            "Dockerfiles/Dockerfile-auto-update-no-config"
+            "Dockerfiles/Dockerfile-es"
         
           )
           
